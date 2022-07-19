@@ -52,14 +52,15 @@
 /turf/open/floor/engine/cult,
 /area/space)
 "bU" = (
-/obj/structure/closet/crate/coffin,
-/obj/machinery/door/window/eastleft{
-	dir = 2;
-	name = "Coffin Storage";
-	req_access_txt = "22"
+/obj/machinery/door/airlock/external{
+	req_access_txt = "13"
 	},
-/turf/open/floor/iron/smooth_large,
-/area/service/chapel/office)
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/effect/turf_decal/siding/thinplating/dark/corner{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/space)
 "cj" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/bookmanagement,
@@ -71,9 +72,30 @@
 /obj/item/nullrod,
 /turf/open/floor/iron/grimy,
 /area/space)
+"cq" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "ct" = (
 /obj/structure/bookcase/random/fiction,
 /turf/open/floor/wood,
+/area/space)
+"cC" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod One";
+	space_dir = 8
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/space)
+"cZ" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod One";
+	space_dir = 8
+	},
+/turf/open/floor/plating,
 /area/space)
 "dn" = (
 /turf/closed/wall/r_wall,
@@ -133,28 +155,51 @@
 	},
 /turf/open/floor/iron/dark,
 /area/service/chapel)
-"fz" = (
-/obj/machinery/door/airlock/service/glass{
-	name = "Chapel Office";
-	req_access_txt = "22"
+"fp" = (
+/obj/structure/railing{
+	dir = 8;
+	pixel_x = -3
 	},
-/turf/open/floor/iron/dark,
+/obj/structure/railing{
+	pixel_y = -3
+	},
+/turf/open/openspace,
+/area/space)
+"fy" = (
+/obj/structure/closet/crate/coffin,
+/obj/structure/window/reinforced/spawner/east,
+/obj/structure/window/reinforced/spawner/north,
+/turf/open/floor/iron/smooth_large,
 /area/service/chapel/office)
+"fz" = (
+/obj/machinery/door/airlock/external{
+	req_access_txt = "13";
+	space_dir = 2
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/space)
 "fJ" = (
 /turf/open/floor/iron/chapel{
 	dir = 8
 	},
 /area/service/chapel)
 "fL" = (
-/obj/machinery/light/small/directional/south,
-/turf/open/floor/iron/dark,
-/area/service/chapel/office)
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/space)
 "fQ" = (
 /obj/structure/railing{
 	pixel_y = -3
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"gb" = (
+/obj/structure/lattice/catwalk,
+/turf/open/space/basic,
+/area/space/nearstation)
 "gB" = (
 /turf/open/floor/iron/grimy,
 /area/service/chapel/office)
@@ -174,11 +219,27 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/space)
+"hK" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/iron,
+/area/hallway/secondary/entry)
 "hM" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lantern,
 /turf/open/floor/iron/dark,
 /area/service/chapel)
+"hO" = (
+/turf/open/floor/plating/airless,
+/area/hallway/secondary/entry)
+"ih" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod One"
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "iw" = (
 /obj/structure/chair{
 	dir = 1
@@ -196,6 +257,9 @@
 /obj/effect/landmark/start/assistant,
 /turf/open/floor/wood,
 /area/space)
+"jd" = (
+/turf/open/floor/iron,
+/area/hallway/secondary/entry)
 "jk" = (
 /obj/structure/table/glass,
 /obj/item/food/grown/poppy,
@@ -235,6 +299,9 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/space)
+"jH" = (
+/turf/open/floor/glass/reinforced,
+/area/space)
 "jL" = (
 /obj/structure/table/glass,
 /obj/item/storage/fancy/candle_box,
@@ -253,7 +320,8 @@
 /turf/open/floor/iron/grimy,
 /area/space)
 "kG" = (
-/obj/machinery/disposal/bin,
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp,
 /turf/open/floor/iron/grimy,
 /area/service/chapel/office)
 "kH" = (
@@ -262,7 +330,7 @@
 "kI" = (
 /obj/structure/stairs/north,
 /turf/open/floor/iron/dark,
-/area/space)
+/area/service/chapel)
 "kZ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/space/basic,
@@ -287,6 +355,20 @@
 "lw" = (
 /turf/open/floor/wood,
 /area/space)
+"lG" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/external{
+	name = "Port Docking Bay 3"
+	},
+/turf/open/floor/plating/airless,
+/area/hallway/secondary/entry)
+"lK" = (
+/obj/structure/lattice/catwalk,
+/obj/structure/marker_beacon/burgundy,
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "me" = (
 /obj/structure/railing{
 	dir = 4;
@@ -294,12 +376,22 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"mi" = (
+/obj/machinery/door/airlock/external{
+	req_access_txt = "13"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/space)
 "mk" = (
-/obj/structure/closet/crate/coffin,
-/obj/structure/window/spawner/east,
-/obj/structure/window/spawner,
-/turf/open/floor/iron/smooth_large,
-/area/service/chapel/office)
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/space)
+"mq" = (
+/turf/closed/wall,
+/area/construction/mining/aux_base)
 "mz" = (
 /obj/structure/bodycontainer/morgue,
 /turf/open/floor/iron/dark,
@@ -308,14 +400,32 @@
 /obj/effect/spawner/structure/window,
 /turf/open/space/basic,
 /area/space)
+"nw" = (
+/obj/machinery/light/small/directional/south,
+/turf/open/openspace,
+/area/space)
+"nz" = (
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "nE" = (
-/obj/structure/table/wood,
+/obj/structure/chair{
+	dir = 1
+	},
 /turf/open/floor/iron/grimy,
 /area/service/chapel/office)
 "nM" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/space)
+"ok" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod One"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "ol" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Crematorium Maintenance";
@@ -325,20 +435,31 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/space)
+"oB" = (
+/obj/structure/closet/crate/coffin,
+/obj/machinery/door/window/eastleft{
+	dir = 1;
+	name = "Coffin Storage";
+	req_access_txt = "22"
+	},
+/turf/open/floor/iron/smooth_large,
+/area/service/chapel/office)
+"oF" = (
+/turf/open/floor/plating,
+/area/construction/mining/aux_base)
+"oL" = (
+/turf/open/space/basic,
+/area/service/chapel)
 "py" = (
 /turf/open/floor/iron/chapel{
 	dir = 1
 	},
 /area/service/chapel)
 "pE" = (
-/obj/structure/table/wood,
-/obj/item/clothing/under/misc/burial,
-/obj/item/clothing/under/misc/burial,
-/obj/item/clothing/under/misc/burial,
-/obj/item/clothing/under/misc/burial,
-/obj/item/clothing/under/misc/burial,
-/obj/item/clothing/under/misc/burial,
-/turf/open/floor/iron/dark,
+/obj/structure/closet/crate/coffin,
+/obj/structure/window/reinforced/spawner/west,
+/obj/structure/window/reinforced/spawner/north,
+/turf/open/floor/iron/smooth_large,
 /area/service/chapel/office)
 "qe" = (
 /obj/structure/bodycontainer/crematorium{
@@ -372,6 +493,14 @@
 	},
 /turf/open/floor/engine/cult,
 /area/service/chapel)
+"qu" = (
+/obj/structure/railing/corner{
+	dir = 8;
+	pixel_x = -2;
+	pixel_y = -2
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "qC" = (
 /turf/closed/wall,
 /area/service/chapel)
@@ -383,6 +512,20 @@
 /obj/machinery/door/poddoor/massdriver_chapel,
 /turf/open/floor/plating,
 /area/service/chapel)
+"ro" = (
+/obj/structure/marker_beacon/burgundy,
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
+"sd" = (
+/obj/machinery/door/airlock/external{
+	req_access_txt = "13";
+	space_dir = 8
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/space)
 "sf" = (
 /obj/effect/landmark/start/chaplain,
 /turf/open/floor/iron/dark,
@@ -392,6 +535,13 @@
 /obj/structure/window/spawner/east,
 /turf/open/floor/iron/smooth_large,
 /area/space)
+"sD" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/item/kirbyplants/random,
+/turf/open/floor/iron,
+/area/hallway/secondary/entry)
 "td" = (
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron/dark,
@@ -430,6 +580,10 @@
 /obj/item/reagent_containers/food/drinks/bottle/holywater,
 /turf/open/floor/iron/grimy,
 /area/space)
+"tJ" = (
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/dark,
+/area/space)
 "tR" = (
 /obj/machinery/camera/directional/west{
 	c_tag = "Chapel Crematorium"
@@ -451,7 +605,7 @@
 "uw" = (
 /obj/structure/closet/crate/coffin,
 /obj/machinery/door/window/eastleft{
-	dir = 1;
+	dir = 2;
 	name = "Coffin Storage";
 	req_access_txt = "22"
 	},
@@ -475,21 +629,35 @@
 	pixel_x = -3
 	},
 /turf/open/floor/iron/dark,
-/area/space)
+/area/service/chapel)
+"vh" = (
+/turf/closed/wall/r_wall,
+/area/hallway/secondary/entry)
 "vu" = (
 /obj/machinery/firealarm/directional/south,
 /obj/structure/table/wood,
 /obj/machinery/computer/libraryconsole,
 /turf/open/floor/wood,
 /area/space)
+"vB" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/chair/sofa/bench/left{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/hallway/secondary/entry)
 "vC" = (
 /obj/effect/spawner/xmastree,
 /turf/open/floor/carpet,
 /area/space)
 "vH" = (
-/obj/machinery/vending/wardrobe/chap_wardrobe,
-/turf/open/floor/iron/dark,
-/area/service/chapel/office)
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/airlock/external{
+	req_access_txt = "13";
+	space_dir = 1
+	},
+/turf/open/floor/plating,
+/area/space)
 "vJ" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin{
@@ -585,6 +753,13 @@
 /obj/item/flashlight/lantern,
 /turf/open/floor/iron/dark,
 /area/space)
+"yQ" = (
+/obj/machinery/camera/directional/east{
+	c_tag = "Arrivals Escape Pod 2"
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "yR" = (
 /turf/open/floor/iron/dark,
 /area/service/chapel)
@@ -617,10 +792,13 @@
 "Ax" = (
 /turf/closed/wall,
 /area/service/chapel/office)
+"AC" = (
+/turf/closed/wall,
+/area/hallway/secondary/entry)
 "AD" = (
 /obj/structure/closet/crate/coffin,
-/obj/structure/window/reinforced/spawner/east,
-/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/spawner/east,
+/obj/structure/window/spawner,
 /turf/open/floor/iron/smooth_large,
 /area/service/chapel/office)
 "AV" = (
@@ -643,9 +821,21 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/fakebasalt,
 /area/space)
+"Bw" = (
+/obj/structure/stairs/north,
+/obj/structure/railing{
+	dir = 8;
+	pixel_x = -3
+	},
+/turf/open/floor/iron/dark,
+/area/service/chapel/office)
 "BA" = (
 /obj/item/stack/tile/basalt,
 /turf/open/floor/plating,
+/area/space)
+"Cg" = (
+/obj/machinery/vending/wardrobe/chap_wardrobe,
+/turf/open/floor/iron/dark,
 /area/space)
 "Cx" = (
 /obj/effect/spawner/xmastree,
@@ -685,6 +875,13 @@
 "DN" = (
 /turf/open/openspace,
 /area/space)
+"DT" = (
+/obj/structure/closet/emcloset,
+/obj/machinery/camera/directional/east{
+	c_tag = "Arrivals Escape Pod 1"
+	},
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "Ea" = (
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/iron/dark,
@@ -711,6 +908,14 @@
 	},
 /turf/open/floor/plating,
 /area/service/chapel)
+"EE" = (
+/obj/docking_port/stationary/random{
+	dir = 8;
+	id = "pod_lavaland";
+	name = "lavaland"
+	},
+/turf/open/space/basic,
+/area/space)
 "EG" = (
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/carpet,
@@ -729,6 +934,18 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"Fv" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/plating,
+/area/space)
+"FE" = (
+/obj/structure/sign/warning/pods{
+	pixel_y = 32
+	},
+/turf/open/floor/iron/white/corner{
+	dir = 1
+	},
+/area/hallway/secondary/entry)
 "FJ" = (
 /obj/effect/landmark/start/assistant,
 /obj/structure/chair/pew/right{
@@ -738,6 +955,10 @@
 	dir = 4
 	},
 /area/space)
+"FZ" = (
+/obj/structure/chair,
+/turf/open/floor/iron/grimy,
+/area/service/chapel/office)
 "Gk" = (
 /obj/structure/bodycontainer/crematorium{
 	dir = 4;
@@ -745,6 +966,27 @@
 	},
 /turf/open/floor/iron/dark,
 /area/service/chapel/office)
+"Gz" = (
+/obj/docking_port/stationary/random{
+	dir = 8;
+	id = "pod_2_lavaland";
+	name = "lavaland"
+	},
+/turf/open/space/basic,
+/area/space)
+"GS" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/white/corner{
+	dir = 1
+	},
+/area/hallway/secondary/entry)
+"Hr" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "Hs" = (
 /obj/structure/chair/pew/left{
 	dir = 8
@@ -757,6 +999,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/space)
+"HW" = (
+/obj/structure/lattice,
+/turf/open/space/basic,
+/area/space/nearstation)
 "Id" = (
 /turf/open/floor/iron/dark/side{
 	dir = 1
@@ -764,6 +1010,25 @@
 /area/space)
 "IG" = (
 /turf/open/floor/plating,
+/area/space)
+"IK" = (
+/obj/structure/table/wood,
+/obj/item/paper_bin{
+	pixel_x = -2;
+	pixel_y = 5
+	},
+/obj/item/pen,
+/turf/open/floor/iron/grimy,
+/area/service/chapel/office)
+"IZ" = (
+/obj/structure/table/wood,
+/obj/item/clothing/under/misc/burial,
+/obj/item/clothing/under/misc/burial,
+/obj/item/clothing/under/misc/burial,
+/obj/item/clothing/under/misc/burial,
+/obj/item/clothing/under/misc/burial,
+/obj/item/clothing/under/misc/burial,
+/turf/open/floor/iron/dark,
 /area/space)
 "Jg" = (
 /obj/structure/closet/crate/coffin,
@@ -800,6 +1065,10 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/space)
+"Ka" = (
+/obj/structure/sign/warning/pods,
+/turf/closed/wall,
+/area/hallway/secondary/entry)
 "Kz" = (
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/carpet,
@@ -829,6 +1098,17 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/space)
+"Ly" = (
+/obj/docking_port/stationary{
+	dir = 8;
+	dwidth = 1;
+	height = 4;
+	name = "escape pod loader";
+	roundstart_template = /datum/map_template/shuttle/escape_pod/default;
+	width = 3
+	},
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "LF" = (
 /obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/iron/dark,
@@ -885,6 +1165,32 @@
 /obj/item/book/codex_gigas,
 /turf/open/floor/engine/cult,
 /area/space)
+"Oq" = (
+/obj/machinery/door/airlock/service/glass{
+	name = "Chapel Office";
+	req_access_txt = "22"
+	},
+/turf/open/floor/iron/dark,
+/area/service/chapel/office)
+"OA" = (
+/obj/structure/sign/warning/docking,
+/turf/closed/wall/r_wall,
+/area/hallway/secondary/entry)
+"OI" = (
+/obj/effect/turf_decal/stripes/corner,
+/turf/open/floor/iron,
+/area/hallway/secondary/entry)
+"OV" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/chair/sofa/bench/right{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/hallway/secondary/entry)
+"Ph" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating/airless,
+/area/hallway/secondary/entry)
 "PC" = (
 /obj/structure/chair/pew/left{
 	dir = 1
@@ -897,11 +1203,14 @@
 /turf/open/floor/iron/dark,
 /area/space)
 "PG" = (
-/obj/structure/closet/crate/coffin,
-/obj/structure/window/spawner/west,
-/obj/structure/window/spawner,
-/turf/open/floor/iron/smooth_large,
-/area/service/chapel/office)
+/obj/machinery/door/airlock/external{
+	req_access_txt = "13"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/space)
 "Qj" = (
 /obj/structure/chair{
 	dir = 1
@@ -918,6 +1227,18 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/space)
+"RU" = (
+/obj/docking_port/stationary{
+	dheight = 3;
+	dir = 8;
+	dwidth = 8;
+	height = 11;
+	id = "ferry_home";
+	name = "Port Bay 2";
+	width = 20
+	},
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "St" = (
 /obj/machinery/vending/wardrobe/chap_wardrobe,
 /obj/item/radio/intercom/directional/north,
@@ -958,12 +1279,18 @@
 "Ti" = (
 /turf/open/floor/carpet,
 /area/service/chapel)
+"Tn" = (
+/obj/structure/bodycontainer/morgue{
+	dir = 2
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "TC" = (
 /obj/structure/altar_of_gods,
 /turf/open/floor/iron/dark,
 /area/space)
 "TO" = (
-/obj/structure/chair,
+/obj/structure/table/wood,
 /turf/open/floor/iron/grimy,
 /area/service/chapel/office)
 "Uh" = (
@@ -975,6 +1302,9 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/dark,
 /area/space)
+"Uj" = (
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "Uo" = (
 /obj/structure/chair/comfy/brown{
 	dir = 8
@@ -1006,10 +1336,17 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
+"VG" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/iron,
+/area/hallway/secondary/entry)
 "VK" = (
 /obj/structure/closet/crate/coffin,
-/obj/structure/window/reinforced/spawner/west,
-/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/spawner/west,
+/obj/structure/window/spawner,
 /turf/open/floor/iron/smooth_large,
 /area/service/chapel/office)
 "VM" = (
@@ -1021,12 +1358,30 @@
 /obj/structure/window/spawner/west,
 /turf/open/floor/wood,
 /area/space)
+"VZ" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/iron/white/corner{
+	dir = 1
+	},
+/area/hallway/secondary/entry)
 "WD" = (
 /obj/structure/bookcase{
 	name = "Forbidden Knowledge"
 	},
 /turf/open/floor/engine/cult,
 /area/space)
+"WK" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external{
+	name = "Port Docking Bay 3";
+	space_dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/hallway/secondary/entry)
 "WS" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/stack/tile/basalt,
@@ -1053,6 +1408,10 @@
 	},
 /turf/open/floor/iron/dark,
 /area/service/chapel)
+"XL" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/plating,
+/area/hallway/secondary/entry)
 "YD" = (
 /obj/structure/table/wood,
 /obj/machinery/libraryscanner,
@@ -1066,6 +1425,16 @@
 /obj/structure/ladder,
 /turf/open/floor/plating,
 /area/space)
+"ZC" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/navbeacon/wayfinding,
+/obj/machinery/door/airlock/external{
+	name = "Port Docking Bay 3"
+	},
+/turf/open/floor/plating/airless,
+/area/hallway/secondary/entry)
 "ZQ" = (
 /obj/effect/landmark/start/hangover,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -14032,7 +14401,7 @@ jX
 jX
 jX
 jX
-Dv
+jX
 jX
 jX
 jX
@@ -14792,7 +15161,7 @@ jX
 fj
 uy
 eA
-fL
+eA
 Ax
 yR
 ln
@@ -15560,10 +15929,10 @@ jX
 fj
 fj
 kG
-nE
+gB
 gB
 eA
-vH
+eA
 Ax
 Ek
 yR
@@ -15815,14 +16184,14 @@ jX
 jX
 jX
 fj
-gB
+FZ
 TO
 nE
 gB
 eA
 pE
 VK
-PG
+yR
 yR
 Hs
 xr
@@ -16073,13 +16442,13 @@ jX
 jX
 fj
 gB
+IK
 gB
-nE
 gB
 eA
-eA
+oB
 uw
-bU
+yR
 yR
 py
 fJ
@@ -16330,13 +16699,13 @@ jX
 jX
 fj
 gB
-nE
-nE
+gB
+gB
 gB
 eA
-eA
+fy
 AD
-mk
+yR
 yR
 Hs
 xr
@@ -16585,14 +16954,14 @@ jX
 jX
 jX
 jX
-fj
-gB
-gB
+Ax
+Ax
+Bw
 gB
 gB
 eA
+Oq
 eA
-fz
 yR
 yR
 py
@@ -17107,16 +17476,16 @@ jX
 qC
 al
 fn
-PD
-PD
-la
-la
-la
-la
-la
-la
-la
-Dv
+yR
+yR
+Ti
+Ti
+Ti
+Ti
+Ti
+Ti
+Ti
+qC
 jX
 jX
 jX
@@ -17364,16 +17733,16 @@ jX
 qC
 ST
 qC
-PD
-PD
-la
-la
-la
-la
-la
-la
-la
-Dv
+yR
+yR
+Ti
+Ti
+Ti
+Ti
+Ti
+Ti
+Ti
+qC
 jX
 jX
 jX
@@ -17621,16 +17990,16 @@ jX
 qC
 XC
 wE
-PD
-PD
-Dv
+yR
+yR
+qC
 uV
-PD
-PD
-Dv
-Dv
-Dv
-Dv
+yR
+yR
+qC
+qC
+qC
+qC
 jX
 jX
 jX
@@ -17878,13 +18247,13 @@ jX
 qC
 qt
 qC
-PD
-PD
-Dv
+qC
+yR
+qC
 kI
-PD
-PD
-Dv
+yR
+yR
+qC
 jX
 jX
 jX
@@ -18114,17 +18483,17 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+Dv
+fL
+fL
+fL
+fL
+Dv
+fL
+fL
+fL
+fL
+Dv
 jX
 jX
 jX
@@ -18135,13 +18504,13 @@ jX
 qC
 qC
 qC
-PD
-PD
-Dv
-Dv
-Dv
-Dv
-Dv
+oL
+oL
+qC
+qC
+qC
+qC
+qC
 jX
 jX
 jX
@@ -18369,21 +18738,21 @@ jX
 jX
 jX
 jX
+Dv
+Lk
+Lk
+fL
 jX
 jX
 jX
+mk
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+fL
+kZ
+kZ
+Dv
 jX
 jX
 jX
@@ -18626,21 +18995,21 @@ jX
 jX
 jX
 jX
+bU
+IG
+fz
+fL
 jX
 jX
 jX
+mk
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+fL
+vH
+IG
+PG
 jX
 jX
 jX
@@ -18883,21 +19252,21 @@ jX
 jX
 jX
 jX
+Dv
+Lk
+Lk
+fL
 jX
 jX
 jX
+mk
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+fL
+kZ
+kZ
+Dv
 jX
 jX
 jX
@@ -19142,17 +19511,17 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+Dv
+fL
+fL
+fL
+fL
+Dv
+fL
+fL
+fL
+fL
+Dv
 jX
 jX
 jX
@@ -77208,10 +77577,10 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
+ro
+Uj
+RU
+ro
 jX
 jX
 jX
@@ -77465,10 +77834,10 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
+vh
+WK
+WK
+vh
 jX
 jX
 jX
@@ -77722,10 +78091,10 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
+Ph
+hO
+hO
+Ph
 jX
 jX
 jX
@@ -77979,11 +78348,11 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
+vh
+lG
+ZC
+vh
+vh
 jX
 jX
 jX
@@ -78236,11 +78605,11 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
+vh
+VZ
+jd
+sD
+Hr
 jX
 jX
 jX
@@ -78493,11 +78862,11 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
+vh
+VZ
+jd
+vB
+Hr
 jX
 jX
 jX
@@ -78750,11 +79119,11 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
+vh
+VZ
+jd
+OV
+Hr
 jX
 jX
 jX
@@ -79007,11 +79376,11 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
+vh
+GS
+jd
+hK
+Hr
 jX
 jX
 jX
@@ -79264,6 +79633,11 @@ jX
 jX
 jX
 jX
+vh
+VZ
+jd
+hK
+Hr
 jX
 jX
 jX
@@ -79275,12 +79649,7 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
+IG
 jX
 jX
 jX
@@ -79521,6 +79890,11 @@ jX
 jX
 jX
 jX
+vh
+VZ
+jd
+vB
+Hr
 jX
 jX
 jX
@@ -79532,12 +79906,7 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
+IG
 jX
 jX
 jX
@@ -79559,7 +79928,7 @@ jX
 IG
 YS
 Dv
-IG
+sd
 Dv
 jX
 jX
@@ -79760,6 +80129,12 @@ jX
 jX
 jX
 jX
+oF
+mq
+XL
+nz
+yQ
+OA
 jX
 jX
 jX
@@ -79768,21 +80143,15 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+OA
+DT
+nz
+cq
+vh
+VZ
+jd
+OV
+Hr
 jX
 jX
 jX
@@ -80017,29 +80386,29 @@ jX
 jX
 jX
 jX
+oF
+mq
+Ka
+ok
+AC
+vh
+Hr
+Uj
 jX
 jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+Uj
+vh
+AC
+AC
+ih
+vh
+FE
+OI
+VG
+OA
 jX
 jX
 jX
@@ -80073,7 +80442,7 @@ Dv
 DN
 DN
 Dv
-IG
+mi
 Dv
 Lk
 Lk
@@ -80328,16 +80697,16 @@ jX
 Dv
 DN
 DN
-DN
+nw
 Dv
 PD
 me
 Lk
-jX
-jX
-jX
-jX
-jX
+DN
+DN
+DN
+DN
+DN
 Lk
 Lk
 jX
@@ -80588,14 +80957,14 @@ DN
 DN
 Dv
 fQ
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+DN
 Lk
 jX
 jX
@@ -80845,14 +81214,14 @@ Lk
 Lk
 Dv
 fQ
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+DN
 Lk
 jX
 jX
@@ -81095,21 +81464,21 @@ jX
 jX
 Lk
 Lk
-PD
-PD
+IZ
+Cg
 PD
 PD
 PD
 Dv
 fQ
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+DN
 Dv
 jX
 jX
@@ -81359,14 +81728,14 @@ PD
 PD
 Lk
 fQ
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+DN
 Dv
 jX
 jX
@@ -81567,15 +81936,15 @@ jX
 jX
 jX
 jX
+lK
+jX
+lK
 jX
 jX
 jX
+lK
 jX
-jX
-jX
-jX
-jX
-jX
+lK
 jX
 jX
 jX
@@ -81616,15 +81985,15 @@ PD
 PD
 Lk
 fQ
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-IG
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+Dv
 jX
 jX
 jX
@@ -81824,15 +82193,15 @@ jX
 jX
 jX
 jX
+HW
+jX
+HW
 jX
 jX
 jX
+HW
 jX
-jX
-jX
-jX
-jX
-jX
+HW
 jX
 jX
 jX
@@ -81873,14 +82242,14 @@ PD
 PD
 Lk
 fQ
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+DN
 Dv
 jX
 jX
@@ -82080,16 +82449,16 @@ jX
 jX
 jX
 jX
+gb
+gb
+HW
+gb
+gb
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+gb
+gb
+HW
+gb
 jX
 jX
 jX
@@ -82123,21 +82492,21 @@ jX
 jX
 Lk
 PD
-PD
+fp
 PD
 PD
 PD
 PD
 AV
 fQ
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+DN
 Dv
 jX
 jX
@@ -82337,6 +82706,17 @@ jX
 jX
 jX
 jX
+Uj
+Uj
+jX
+Uj
+Uj
+jX
+Uj
+Uj
+jX
+Uj
+Uj
 jX
 jX
 jX
@@ -82365,19 +82745,7 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+Dv
 Dv
 Dv
 Dv
@@ -82386,15 +82754,16 @@ PD
 Dv
 Dv
 Dv
+Dv
 fQ
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+DN
 Dv
 jX
 jX
@@ -82594,35 +82963,17 @@ jX
 jX
 jX
 jX
+Uj
 jX
+Gz
 jX
+Uj
 jX
+Uj
 jX
+EE
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+Uj
 jX
 jX
 jX
@@ -82641,17 +82992,35 @@ jX
 jX
 jX
 Dv
+jX
+jX
+jX
+jX
+jX
+jX
+jX
+jX
+jX
+Dv
+Dv
+jX
+Dv
+Tn
+PD
+PD
+PD
+Dv
 PD
 PD
 fQ
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+DN
 Dv
 jX
 jX
@@ -82851,6 +83220,17 @@ jX
 jX
 jX
 jX
+HW
+jX
+jX
+jX
+HW
+jX
+HW
+jX
+jX
+jX
+HW
 jX
 jX
 jX
@@ -82868,26 +83248,7 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+IG
 jX
 jX
 jX
@@ -82898,17 +83259,25 @@ jX
 jX
 jX
 Dv
+jX
+jX
+Dv
+Tn
+PD
+PD
+PD
+Dv
 PD
 PD
 fQ
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+DN
+DN
+DN
+DN
+DN
+DN
+DN
+DN
 Dv
 jX
 jX
@@ -83108,35 +83477,17 @@ jX
 jX
 jX
 jX
+HW
 jX
 jX
 jX
+HW
+jX
+HW
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+HW
 jX
 jX
 jX
@@ -83155,9 +83506,27 @@ jX
 jX
 jX
 Dv
+jX
+jX
+jX
+jX
+jX
+jX
+jX
+jX
+jX
+Dv
+jX
+jX
+Dv
+Tn
 PD
 PD
 PD
+Dv
+PD
+PD
+qu
 Mx
 xi
 DN
@@ -83365,6 +83734,17 @@ jX
 jX
 jX
 jX
+HW
+jX
+jX
+jX
+HW
+jX
+HW
+jX
+jX
+jX
+HW
 jX
 jX
 jX
@@ -83380,6 +83760,9 @@ jX
 jX
 jX
 jX
+Dv
+Dv
+Dv
 jX
 jX
 jX
@@ -83389,28 +83772,14 @@ jX
 jX
 jX
 jX
+Dv
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+Dv
+Tn
+PD
+PD
+PD
 Dv
 PD
 PD
@@ -83622,6 +83991,17 @@ jX
 jX
 jX
 jX
+HW
+Uj
+Ly
+Uj
+HW
+jX
+HW
+Uj
+Ly
+Uj
+HW
 jX
 jX
 jX
@@ -83639,35 +84019,24 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+Dv
+Fv
+Fv
+Fv
+Fv
+Dv
+Fv
+Fv
+Fv
+Fv
+Dv
+Dv
+IG
+Dv
+Dv
+Dv
+PD
+Dv
 Dv
 Dv
 Dv
@@ -83879,6 +84248,17 @@ jX
 jX
 jX
 jX
+Dv
+Dv
+cC
+Dv
+dn
+jX
+dn
+Dv
+cZ
+Dv
+dn
 jX
 jX
 jX
@@ -83896,33 +84276,22 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+tJ
+jH
+jH
+jH
+jH
+jH
+jH
+jH
+jH
+jH
+tJ
+dP
+dP
+dP
+dP
+dP
 jX
 jX
 jX
@@ -84164,22 +84533,22 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+tJ
+jH
+jH
+jH
+jH
+jH
+jH
+jH
+jH
+jH
+tJ
+dP
+dP
+dP
+dP
+dP
 jX
 jX
 jX
@@ -84421,22 +84790,22 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+tJ
+jH
+jH
+jH
+jH
+jH
+jH
+jH
+jH
+jH
+tJ
+dP
+dP
+dP
+dP
+dP
 jX
 jX
 jX
@@ -84678,18 +85047,18 @@ jX
 jX
 jX
 jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
-jX
+Dv
+Fv
+Fv
+Fv
+Fv
+Dv
+Fv
+Fv
+Fv
+Fv
+Dv
+Dv
 jX
 jX
 jX
